@@ -10,7 +10,8 @@
     <title>UHack</title>
     <meta name="description" content="">
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href=".png">
+    <link rel="icon" href="assets/images/logo.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script type="text/javascript" async="" src="assets/analytics.js"></script><script async="" src="assets/js"></script>
     <script>
@@ -23,15 +24,17 @@
 
   <link href="assets/css" rel="stylesheet"></head><span id="warning-container"><i data-reactroot=""></i></span>
   <body data-gr-c-s-loaded="true">
-
-    <div class="alert" style="text-align: center;">
-        Learn. Share. Build.
-    </div>
-
+    <nav class="navbar">
+      <div class="container nav-content">    
+            <span class="nav-span" style="">Learn. Share. Build.</span>
+      </div>
+    </nav>
     <section id="cover" class="first-section page-section">
+          <br><br><br>
       <div id="cover-container" class="container">
-      <img id="cover-logo" src="assets/logo.png">
-        <div id="cover-info">
+      <img id="cover-logo" src="assets/images/transplogo.png" style="width: 45%;
+      height: 45%;">
+        <div id="cover-info" style="float: right;">
           <h1 class="animated fadeInLeft">UHack</h1>
           <div id="buttons">
             <a href="#" id="registration-button" class="animated fadeInLeft button" style="color: black;">Workflow</a>
@@ -41,14 +44,15 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <footer id="copyright-footer">
-      <ul id="social-media">
+        <ul id="social-media" style="text-align: center;">
         <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
         <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
         <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
       </ul>
+    </section>
+
+    <footer id="copyright-footer">
+      
       © Copyright UHack 2018
     </footer>
 
