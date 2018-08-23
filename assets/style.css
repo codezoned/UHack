@@ -439,47 +439,107 @@ p {
     width: 1250px;
   }
 }
+@media (min-width: 800px) {
+  .uhack-logo{
+    width: 70%;
+    height: 55%; 
+    padding-left: 4%; 
+    margin-top: 5.5%;
+  }
 
-.uhack-logo{
-  width: 40.5%;
-  height: 42.5%; 
-  padding-left: 4%; 
-  margin-top: 5.5%;
+  .sponsor-logo{
+    width: 35%;
+    height: 45%;
+  }
+
+  .h3-class{
+    color: white; 
+    text-align: center; 
+    margin-top: 10%;
+  }
+   .h3-sponsored-by-class{
+    margin-top: -10%;
+   }
+
+   .association-logo-spi{
+    width: 43%;
+    height: 60%; 
+    padding-right: 5%;
+   }
+
+   .association-logo-codezoned{
+    width: 43%;
+    height: 60%; 
+    margin-bottom: 5%; 
+    padding-left: 6%;
+   }
+
+   .footer-icon{
+    color: white; 
+    padding-right: 30px; 
+   }
+
+   .discord-icon{
+    width: 20px; 
+    height: 15px;
+   }
+   .uhack-text{
+      float: right; 
+      margin-top: -27%;
+   }
 }
 
-.sponsor-logo{
-  width: 35%;
-  height: 45%;
+@media (max-width: 800px) {
+  .uhack-logo{
+    width: 70%;
+    height: 55%; 
+    padding: 12.5%; 
+
+  }
+
+  .sponsor-logo{
+    width: 90%;
+    height: 75%;
+  }
+
+  .h3-class{
+    color: white; 
+    text-align: center; 
+    margin-top: 10%;
+  }
+   .h3-sponsored-by-class{
+    margin-top: -10%;
+   }
+
+   .association-logo-spi{
+    width: 80%;
+    height: 60%; 
+  
+    margin-left: 10%;
+   }
+
+   .association-logo-codezoned{
+    width: 90%;
+    height: 75%; 
+    margin-bottom: 5%; 
+    margin-left: 10%;
+   }
+
+   .footer-icon{
+    color: white; 
+    padding-right: 30px; 
+   }
+
+   .discord-icon{
+    width: 20px; 
+    height: 15px;
+   }
+   .logo-class{
+      /*margin-left: 15%;*/
+      margin-right: 15%;
+   }
+   .uhack-text{
+      /*margin-left: 20%;*/
+      padding-left: 20%;
+   }
 }
-
-.h3-class{
-  color: white; 
-  text-align: center; 
-  margin-top: 10%;
-}
- .h3-sponsored-by-class{
-  margin-top: -10%;
- }
-
- .association-logo-spi{
-  width: 43%;
-  height: 60%; 
-  padding-right: 5%;
- }
-
- .association-logo-codezoned{
-  width: 43%;
-  height: 60%; 
-  margin-bottom: 5%; 
-  padding-left: 6%;
- }
-
- .footer-icon{
-  color: white; 
-  padding-right: 30px; 
- }
-
- .discord-icon{
-  width: 20px; 
-  height: 15px;
- }
