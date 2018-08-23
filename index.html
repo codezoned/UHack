@@ -25,6 +25,19 @@
       gtag('config', 'UA-43028228-4');
     </script>
     <link href="assets/css" rel="stylesheet"></head><span id="warning-container"><i data-reactroot=""></i></span>
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          padding: 10px;
+        }
+        .grid-item {
+
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+        }
+    </style>
 </head>
 
   
@@ -36,17 +49,20 @@
       </nav>
 
       <section id="cover" class="first-section page-section">
-        <div id="cover-container" class="container" style="margin-left: 16.5%;">
-          <img id="cover-logo" src="assets/images/uhack_shadow.png" class="uhack-logo">
+        <div>
+          <div id="cover-container" class="container logo_class" style="margin-left: 16.5%;">
+            <img id="cover-logo" src="assets/images/uhack_shadow.png" class="uhack-logo">
             
-        </div>
-        <div id="cover-info" style="float: right; margin-top: -27%;">
+          </div>
+          <div id="cover-info" class="uhack-text" style="float: right; margin-top: -27%;">
               <h2 class="animated fadeInLeft">UHack 2018</h2>
               <div id="buttons">
                   <a href="#" id="buttons" class="animated fadeInLeft button" style="color: black;">Workflow</a><br>
                   <a href="#" id="buttons" class="animated fadeInLeft button">The Team</a>
               </div>
-            </div>
+          </div>
+        </div>
+        
         <div class="container-fluid">
             <br><br><h3 class="h3-class">In Association with</h3><br><br>
             <div id="cover-container" class="container">
@@ -76,7 +92,7 @@
                   <a href="#"><i class="fa fa-github" class="footer-icon"></i></a>
               </li>
           </ul>
-       <!--  © Copyright UHack 2018 -->
+       
       </footer>
 
       <script>
