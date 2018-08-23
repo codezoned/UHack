@@ -35,7 +35,7 @@
   padding-top: 2em;
   min-height: 90vh;
   overflow: auto;
-  background-color: #272425;
+  background-color: #4d4b4b;
   color: white; }
 
 #cover-logo {
@@ -69,7 +69,9 @@
     margin-bottom: 0.5em; }
 
 #cover-container {
-  max-width: 36em; }
+  max-width: 56.5em;
+  padding: 12.5px;
+}
 
 .info-line {
   margin: 0; }
@@ -82,7 +84,8 @@
     background-color: #808080; }
 
 #buttons .button {
-  width: 80%;
+  width: 50%;
+  background-color: #FFFFFF;
   color: black; }
 
 .social-media-icon {
@@ -371,7 +374,7 @@ p {
 }
 
 #copyright-footer {
-  background: #272425;
+  background: #4d4b4b;
   text-align: center;
   padding: 2em;
   color: white; 
@@ -400,3 +403,31 @@ p {
   @media (max-width: 700px) {
     .track-logo {
       width: 50%; } }
+
+
+.container-con {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container-con {
+    width: 790px;
+  }
+}
+@media (min-width: 992px) {
+  .container-con {
+    width: 990px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-con {
+    width: 1250px;
+  }
+}
+
+.sponsor-logo{
+  margin: 0 7.5%;
+
+}
