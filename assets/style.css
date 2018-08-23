@@ -8,6 +8,19 @@
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
 
+@font-face{
+  font-family: magneto;
+  src: url("../assets/fonts/magneto/magneto.ttf");
+
+}
+@font-face{
+  font-family: matura;
+  src: url("../assets/fonts/matura-mt-script-capitals/matura-mt-script-capitals.ttf");
+
+}
+
+
+
 .fadeInLeft {
   animation-name: fadeInLeft; }
 
@@ -427,7 +440,46 @@ p {
   }
 }
 
-.sponsor-logo{
-  margin: 0 7.5%;
-
+.uhack-logo{
+  width: 40.5%;
+  height: 42.5%; 
+  padding-left: 4%; 
+  margin-top: 5.5%;
 }
+
+.sponsor-logo{
+  width: 35%;
+  height: 45%;
+}
+
+.h3-class{
+  color: white; 
+  text-align: center; 
+  margin-top: 10%;
+}
+ .h3-sponsored-by-class{
+  margin-top: -10%;
+ }
+
+ .association-logo-spi{
+  width: 43%;
+  height: 60%; 
+  padding-right: 5%;
+ }
+
+ .association-logo-codezoned{
+  width: 43%;
+  height: 60%; 
+  margin-bottom: 5%; 
+  padding-left: 6%;
+ }
+
+ .footer-icon{
+  color: white; 
+  padding-right: 30px; 
+ }
+
+ .discord-icon{
+  width: 20px; 
+  height: 15px;
+ }
