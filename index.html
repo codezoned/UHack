@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:title" content="UHack 2018">
@@ -13,7 +15,8 @@
     <link rel="icon" href="assets/images/logo.png">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script type="text/javascript" async="" src="assets/analytics.js"></script><script async="" src="assets/js"></script>
+    <script type="text/javascript" async="" src="assets/analytics.js"></script>
+    <script async="" src="assets/js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -21,62 +24,155 @@
 
       gtag('config', 'UA-43028228-4');
     </script>
+    <link href="assets/css" rel="stylesheet"></head><span id="warning-container"><i data-reactroot=""></i></span>
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          padding: 10px;
+        }
+        .grid-item {
 
-  <link href="assets/css" rel="stylesheet"></head><span id="warning-container"><i data-reactroot=""></i></span>
-  <body data-gr-c-s-loaded="true">
-    <nav class="navbar">
-      <div class="container nav-content">    
-            <span class="nav-span" style=" font: 1em Georgia;">Learn. Share. Build.</span>
-      </div>
-    </nav>
-    <section id="cover" class="first-section page-section">
-          <br><br><br>
-      <div id="cover-container" class="container">
-      <img id="cover-logo" src="assets/images/transplogo.png" style="width: 40%;
-      height: 35%;">
-        <div id="cover-info" style="float: right;">
-          <h2 class="animated fadeInLeft" style="margin-bottom: 10%;">UHack 2018</h2>
-          <div id="buttons">
-              <a href="#" id="registration-button" class="animated fadeInLeft button" style="color: black;">Workflow</a>
-              <a href="#" id="registration-button" class="animated fadeInLeft button">The Team</a>
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+        }
+    </style>
+</head>
+
+  
+<body data-gr-c-s-loaded="true">
+      <nav class="navbar">
+          <div id="header" class="container nav-content">    
+                <span class="nav-span" style=" font: 1em;">Learn. Share. Build.</span>
+          </div>
+      </nav>
+
+      <section id="cover" class="first-section page-section">
+        <div>
+          <div id="cover-container" class="container logo_class" style="margin-left: 16.5%;">
+            <img id="cover-logo" src="assets/images/uhack_shadow.png" class="uhack-logo">
+            
+          </div>
+          <div id="cover-info" class="uhack-text" style="float: right; margin-top: -27%;">
+              <h2 class="animated fadeInLeft">UHack 2018</h2>
+              <div id="buttons">
+                  <a href="#" id="buttons" class="animated fadeInLeft button" style="color: black;">Workflow</a><br>
+                  <a href="#" id="buttons" class="animated fadeInLeft button">The Team</a>
+              </div>
           </div>
         </div>
-      </div>
-      <div class="container-fluid">
-        <h3 style="color: white; text-align: center;">In Association with</h3><br><br>
-        <div id="cover-container" class="container">
-              <img src="assets/images/spi-logo.png" style="width: 42.5%;
-              height: 45%; padding-right: 6%;">
-              <img src="assets/images/codezoned-logo.png" style="width: 42.5%;
-              height: 45%; margin-bottom: 5%; padding-left: 6%;">
+                <div>
+          <div class="container-fluid" style=" margin-top: 20%;">
+              <h3 class="h3-class">Phases of UHack</h3><br>
+              <div id="cover-container" class="container">
+                  <ul>
+                    <ol class="phases-ol">
+                        Phase 1 - Idea Submission (Online)
+                        <span>Register and Submit your solution online before 2rd September, 2018 in uhack.in</span>
+                    </ol>
+                    <ol class="phases-ol">
+                        Phase 2 : Idea Shortlisting
+                        <span>Teams will be shortlisted based on the idea submitted and a confirmation of the same will be sent via team@uhack.in</span>
+                    </ol>
+                    <ol class="phases-ol">
+                        Phase 3 : Hackthon Phase
+                        <span>Be a part of the 30-hour National Level Hackathon on 26th and 27th of September, 2018 at SRM Institute of Science and Technology, City Campus, Vadapalani, Chennai</span>
+                    </ol>
+                    <ol class="phases-ol">
+                        HACK DAY-1 (06-09-18)
+                        <div>
+                          <li>8.00 AM : Inauguration of UHACK 2018</li>
+                          <li>8.45 AM : Gather For Keynote</li>
+                          <li>9.15 AM : Hack Begins</li>
+                          <li>12.30PM: Lunch Break</li>
+                          <li>01:30PM: Hack Continues</li>
+                          <li>05.00PM: Day 1 Hack ENDS</li>
+                          <li>
+                            05.15PM: First Round Of Evaluation [40% Weightage]
+                            <span>Participants are requested to present the idea of their projects to the judges, briefly explain about their progress for the day and future implementations are to be mentioned.</span>
+                          </li>
+                          <li>06.30PM: OFFLINE HACK DAY 1 ENDS</li>
+                        </div>
+                    </ol>
+                    <ol class="phases-ol">
+                        Online Hack
+                        <li>
+                          08.00PM (06-09-18): ONLINE HACK BEGINS 
+                          <span>Participants will have to push the code in github every 1 hour which will be monitored by the UHACK team.</span>
+                        </li>
+                        <li>
+                          05.00AM (07-09-18) : ONLINE HACK ENDS  
+                        </li>
+                    </ol>
+                    <ol class="phases-ol">
+                      HACK DAY-2 (07-09-18)
+                      <li>08.00AM: OFFLINE HACK DAY-2 BEGINS</li>
+                      <li>11.00AM: Lunch break</li>
+                      <li>12.00PM: Hack Continues</li>
+                      <li>12.45PM: Hack ENDS</li>
+                      <li>01.00PM: Final Round of Evaluation[60% Weightage]</li>
+                        <span>Participants are requested to very briefly explain their idea and are requested to concentrate more on presenting the implementations they have done.</span>
+                      <li>02.30PM: Closing Ceremony</li>
+                    </ol>
+                  </ul>
+              </div>
+          </div>
+        </div> 
+
+        <div>
+          <div class="container-fluid" style=" margin-top: 20%;">
+              <h3 class="h3-class">In Association with</h3><br>
+              <div id="cover-container" class="container">
+                  <img src="assets/images/spi_shadow.png" class="association-logo-spi">
+                  <img src="assets/images/codezoned_shadow.png" class="association-logo-codezoned">
+              </div>
+          </div>
+          <div class="container-fluid" style="margin-top: -5.5%;">
+              <br><h3  class="h3-class">Sponsored By</h3><br>
+              <div id="cover-container" class="container" style="text-align: center;">
+                  <img src="assets/images/aafaq_shadow.png" class="sponsor-logo">
+                  <img src="assets/images/aafiya_shadow.png" class="sponsor-logo">
+              </div>
+          </div>
         </div>
-      </div>
+        
+      <br><br>
 
-      <div class="container-fluid">
-        <h3 style="color: white; text-align: center;">Sponsored By</h3><br><br>
-        <div id="cover-container" class="container">
-              <span style="font-size: 2em;">Aafaq Leathers</span><span style="float: right; font-size: 2em;">Aafiya Shoes</span>
-        </div>
-      </div>          
-    </section>
-    <footer id="copyright-footer">
-      <ul id="social-media" style="text-align: center; bottom: 0;">
-        <li><a href="#"><i class="fa fa-facebook-square" style="color: white; padding-right: 40px; padding-left: 25px;"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter-square" style="color: white; padding-right: 40px;"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram" style="color: white; padding-right: 40px;"></i></a></li>
-      </ul>
-     <!--  © Copyright UHack 2018 -->
-    </footer>
+        <footer>
+            <ul id="social-media" style="text-align: center;">
+                <li>
+                    <a href="#"><i class="fa fa-facebook" class="footer-icon big-icon" style="padding: 0 30px;font-size: 1.35em;"></i></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/images/discord.png" class="footer-icon big-icon discord-icon" style="height: 22px; width: 30px;"></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-github" class="footer-icon big-icon" style="font-size: 1.35em;"></i></a>
+                </li>
+            </ul>
+         
+        </footer>
+       </section>
+      <script>
+        function openNav() {
+            document.getElementById("side-nav").style.width = "70vw";
+        }
 
-    <script>
-      function openNav() {
-          document.getElementById("side-nav").style.width = "70vw";
-      }
+        function closeNav() {
+            document.getElementById("side-nav").style.width = "0";
+        }
 
-      function closeNav() {
-          document.getElementById("side-nav").style.width = "0";
-      }
-    </script>
-  
-
-</body></html>
+        $(document).ready(function(){
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){  
+            $('header');
+          }
+          else{
+             $('header');
+         }
+      });
+    }); 
+      </script>
+</body>
+</html>
