@@ -19,8 +19,33 @@
 
 }
 
+@font-face{
+  font-family: aleg-reg;
+  src: url("../assets/fonts/alegreya/Alegreya-Regular.ttf");
+
+}
+
+@font-face{
+  font-family: ProFontWindows;
+  src: url("../assets/fonts/ProFontWindows/ProFontWindows.ttf");
+
+}
+
+@font-face{
+  font-family: nikoleta;
+  src: url("../assets/fonts/Nikoleta-Font/NIKOLETA.ttf");
+
+}
+@font-face{
+  font-family: impact;
+  src: url("../assets/fonts/impact/impact.ttf");
+
+}
 
 
+table, th, td{
+   border: 1px solid black;
+}
 .fadeInLeft {
   animation-name: fadeInLeft; }
 
@@ -55,17 +80,20 @@
   display: block;
   width: 40%;
   min-height: 200px;
+  min-width: 150px;
   float: left;
   padding-right: 10%;
   padding-top: 2em; }
   @media (max-width: 700px) {
     #cover-logo {
       width: 75%;
-      height: auto;
-      padding: 0;
+      min-height: 200px;
+      min-width: 150px;
+      padding: 0,15px;
       float: none;
       margin: 0 auto;
-      padding-bottom: 4em; } }
+      padding-bottom: 4em;
+      padding-right: 20px; } }
 
 #cover-info {
   width: 45%;
@@ -101,8 +129,8 @@
     background-color: #808080; }
 
 #buttons .button {
-  width: 50%;
-  background-color: #FFFFFF;
+  width: 40%;
+  background-color: white;
   color: black; }
 
 .social-media-icon {
@@ -343,7 +371,7 @@ p {
 }
 
 .container {
-  max-width: 42em;
+  max-width: 48em;
   margin: 0 auto;
   width: 90%; 
 }
@@ -441,25 +469,25 @@ p {
 }
 @media (min-width: 992px) {
   .container-con {
-    width: 990px;
+    width: 1000px;
   }
 }
 @media (min-width: 1200px) {
   .container-con {
-    width: 1250px;
+    width: 1450px;
   }
 }
 @media (min-width: 800px) {
   .uhack-logo{
-    width: 70%;
-    height: 55%; 
+    width: 72.5%;
+    height: 57.5%; 
     padding-left: 4%; 
     margin-top: 5.5%;
   }
 
   .sponsor-logo{
-    width: 35%;
-    height: 45%;
+    width: 45%;
+    height: 55%;
   }
 
   .h3-class{
@@ -472,14 +500,14 @@ p {
    }
 
    .association-logo-spi{
-    width: 43%;
-    height: 60%; 
+    width: 44%;
+    height: 66%; 
     padding-right: 5%;
    }
 
    .association-logo-codezoned{
-    width: 43%;
-    height: 60%; 
+    width: 44%;
+    height: 66%; 
     margin-bottom: 5%; 
     padding-left: 6%;
    }
@@ -508,7 +536,7 @@ p {
 
   .sponsor-logo{
     width: 90%;
-    height: 75%;
+    height: 80%;
   }
 
   .h3-class{
@@ -546,10 +574,12 @@ p {
    .logo-class{
       /*margin-left: 15%;*/
       margin-right: 15%;
+      max-width: 20em;
+      margin-bottom: 10%;
    }
    .uhack-text{
       /*margin-left: 20%;*/
-      padding-left: 20%;
+      padding-left: 50px;
    }
 }
 
@@ -558,6 +588,6 @@ p {
 }
 
 .phases-ol{
-    font-size: 15px;
+    font-size: 11px;
     
 }
