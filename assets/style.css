@@ -559,16 +559,5 @@ p {
 
 .phases-ol{
     font-size: 15px;
-}
-
-.phases-ol li{
-    list-style: none;
-}
-
-.phases-ol h4{
-    list-style: none;
-}
-
-.phases-ol p {
-    font-family: magneto;
+    
 }
