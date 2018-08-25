@@ -557,27 +557,7 @@ p {
   font-size: 2em;
 }
 
-.container-fluid{
-  background-color: #808080;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    border-radius: 5px;
-    display: inline-block;
-}
-
-
 .phases-ol{
     font-size: 15px;
     
-}
-
-.phases-ol li{
-    list-style: none;
-}
-
-.phases-ol h4{
-    list-style: none;
-}
-
-.phases-ol p {
-    font-family: magneto;
 }
