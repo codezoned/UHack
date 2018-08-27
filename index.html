@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="assets/images/logo.png">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script type="text/javascript" async="" src="assets/analytics.js"></script>
     <script async="" src="assets/js"></script>
@@ -28,6 +29,14 @@
     <link href="timeline.css" rel="stylesheet" type="text/css">
       <link href="jugad.css" rel="stylesheet" type="text/css">
     <style>
+         html, body,section {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
         .grid-container {
           display: grid;
           grid-template-columns: auto auto auto;
@@ -40,14 +49,37 @@
           text-align: center;
         }
         .divider-line {
-    height: 4px;
-    width: 60px;
-    border-radius: 5px;
-    margin: 0px auto 30px auto;
-    border: none !important;
-    /*background-color: #f16000 !important;*/
-    background-color: #4a9cff !important;
-}
+          height: 4px;
+          width: 60px;
+          border-radius: 5px;
+          margin: 0px auto 30px auto;
+          border: none !important;
+          /*background-color: #f16000 !important;*/
+          background-color: #4a9cff !important;
+        }
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .column {
+                width: 100%;
+            }
+            .buttonsclick{
+               text-align: center;
+            }
+        }
+
 
     </style>
 </head>
@@ -61,17 +93,17 @@
       </nav>
 
       <section id="cover" class="first-section page-section">
-        <div class="" style="width: 100%;">
-          <div id="" class="container-fluid logo_class" style="margin-left: 5%; text-align: center;">
-            <img id="cover-logo" src="assets/images/uhack_shadow.png" class="uhack-logo" style="margin-left: 10px;">         
-              <p style="color: #4d4b4b; margin-left: -15%;">.</p>
-              <div id="buttons" style="padding-left: 15%; margin-top: 15%;">
-                  <p style="font-size: 1.5em; font-family:  aleg-reg;">UHack '18</p>
-                  <a href="#timelineabc" id="buttons" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg;">Workflow</a><br>
-                  <a href="https://goo.gl/forms/TuCiHqHG9A5hxY3i1" id="buttons" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg;">Register</a>
-                  <a href="#contactus" id="buttons" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg;">Contact Us</a>
-              </div>
+        <div class=" row">
+          <div class="column" style="margin-left: 15%; margin-top: 5%;">
+              <img src="assets/images/uhack_shadow.png" class="img-responsive"> 
           </div>
+          <div class="column buttonsclick" id="buttons" style="margin-left: 7.5%; margin-top: 10%;">  
+              <a href="#timelineabc" id="workflowbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg;">Workflow</a><br>
+              <a href="https://goo.gl/forms/TuCiHqHG9A5hxY3i1" id="registerbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg;">Register</a><br>
+              <a href="#contactus" id="contactusbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg;">Contact Us</a><br>
+              <a href="#aboutus" id="contactusbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg;">Abouts Us</a>
+          </div>
+          
         </div>
                
         
@@ -84,10 +116,12 @@
                 <h3 class="text-center">Timeline</h3>
                 <div class="divider-line"></div>
             </div>
+        </div>
+    </div>
 <div class="timeline">
   <div class="containerx left">
     <div class="content">
-    	<h3 style="color:#263238;font-size: 20px">Submission Phase</h3>   
+      <h3 style="color:#263238;font-size: 20px">Submission Phase</h3>   
       <p style="color: #263238;font-size: 18px">Having a cool idea?</p>
       <p style="color: #263238;font-size: 18px;">Submit your idea and form a team.</p>
       <h4 style="color:#263238;font-size: 15px">Aug 26 - Sep 4</h4>
@@ -118,14 +152,17 @@
     </div>
   </div>
 </div>
+</div>
 
 
                   <div class="container-fluid section" id="schedule">
         <div class="section-wrapper pb-5 pt-5">
-            <div class="section-header mb-5">
-                <h3 class="text-center">Schedule</h3>
+            <div class="section-header mb-5" id="schedulediv">
+                <h1 class="text-center">Schedule</h1>
                 <div class="divider-line"></div>
             </div>
+        </div>
+    </div>
 
 <div class="container-fluid section" id="schedule">
         <div class="section-wrapper pb-5 pt-5">
@@ -133,6 +170,8 @@
                 <h3 class="text-center">Hack Day-1</h3>
                 <div class="divider-line"></div>
             </div>
+        </div>
+    </div>
 
 
 
@@ -140,8 +179,9 @@
             <div class="container">
                 <div class="row mb-5 mt-5 pt-5 pb-lg-3">
                     <div class="col-sm-12 col-md-4 col-lg-4">
-                        <h3>Sept 06, 2018</h3>
+                        <h3>Sept 07, 2018</h3>
                     </div>
+
 
                     <div class="col-sm-12 col-md-8 col-lg-8">
                         <table class="table">
@@ -173,6 +213,8 @@
             <tr>
                                     <td>05:15 PM</td>
                                     <td> First Round Of Evaution [40% Weightage]</td>
+                                </tr>
+
             <tr>
                                     <td>06:15 PM</td>
                                     <td>Day 1 Hack Ends</td>
@@ -184,6 +226,8 @@
                         </table>
                     </div>
                 </div>
+            </div>
+        
 
 <div class="container-fluid section" id="schedule">
         <div class="section-wrapper pb-5 pt-5">
@@ -191,15 +235,17 @@
                 <h3 class="text-center">Online Hack</h3>
                 <div class="divider-line"></div>
             </div>
+        </div>
+    </div>
 
 
 
 
 
-
-      <div class="row mb-5  pb-lg-5">
+<div class="container">
+                <div class="row mb-5 mt-5 pt-5 pb-lg-3">
                     <div class="col-sm-12 col-md-4 col-lg-4">
-                        <h3>Sept 06, 2018</h3>
+                        <h3>Sept 07, 2018</h3>
                     </div>
         <div class="col-sm-12 col-md-8 col-lg-8">
                         <table class="table">
@@ -223,9 +269,9 @@
 
 
 
-    <div class="row mb-5  pb-lg-5">
+                      <div class="row mb-5 mt-5 pt-5 pb-lg-3">
                     <div class="col-sm-12 col-md-4 col-lg-4">
-                        <h3>Sept 07, 2018</h3>
+                        <h3>Sept 08, 2018</h3>
                     </div>
         <div class="col-sm-12 col-md-8 col-lg-8">
                         <table class="table">
@@ -245,6 +291,7 @@
                         </table>
         </div>
                 </div>
+            </div>
 
       
 
@@ -254,17 +301,17 @@
                 <h3 class="text-center">Hack Day-2</h3>
                 <div class="divider-line"></div>
             </div>
+        </div>
+    </div>
 
 
 
-
-
-
-
-                <div class="row mb-5  pb-lg-5">
+            <div class="container">
+                <div class="row mb-5 mt-5 pt-5 pb-lg-3">
                     <div class="col-sm-12 col-md-4 col-lg-4">
-                        <h3>Sept 07, 2018</h3>
+                        <h3>Sept 08, 2018</h3>
                     </div>
+
 
                     <div class="col-sm-12 col-md-8 col-lg-8">
                         <table class="table">
@@ -274,30 +321,39 @@
                                     <td>Day 2 Hack Begins</td>
                                 </tr>
                                 <tr>
-                                    <td>11:30 PM </td>
+                                    <td>11:30 AM</td>
                                     <td>Brunch</td>
                                 </tr>
-                                <tr>
+            <tr>
                                     <td>12:30 PM</td>
                                     <td>Final Tweaking</td>
                                 </tr>
-               <tr>
+            <tr>
                                     <td>12:45 PM</td>
-                                    <td>Hack Ends & Final Round of Evaluation Begins [60% Weightage]</td>
-                               </tr>
-
-        
-                                <tr>
+                                    <td>Hack Ends & Final Round of Evaluation Begins</td>
+                                </tr>
+            <tr>
                                     <td>2:30 PM</td>
                                     <td>Results and Prizes</td>
                                 </tr>
+   
+
+           
+          
+
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
+
+              
+
+
+
+
+       
 
         <div style="width: 100%;">
           <div class="" style=" margin-top: 5%; width: 100%;">
@@ -308,7 +364,7 @@
                   <img src="assets/images/codezoned_shadow.png" class="association-logo-codezoned">
               </div>
           </div>
-          <div class="" style="margin-top: -5.5%; width: 100%;">
+          <div class="" style="width: 100%;">
               <br><h3  class="h3-class">Sponsored By</h3>
                <div class="divider-line"></div>
               <div id="cover-container" class="container" style="text-align: center;">
@@ -319,20 +375,43 @@
         </div>
         <br>
         <br>
+        <br>
+        <br>
+        <br>
 
- <div id="contactus" style="margin-top: -5.5%; width: 100%;">
+
+        <div id="aboutus" style="width: 100%; text-align: center; padding-top: 5%; margin-top: -5%; ">
+            <h3 class="h3-class">About Us</h3>
+               <div class="divider-line"></div>
+             <p style="">UHack is a Hackathon that fosters a community of doers<br>who challenge the status quo and push today’s technology to its limits.<br> Participants can let go of their inhibitions, create cool inspiring projects<br> and meet like-minded people from various backgrounds.</p>
+        </div>
+<br>
+<br>
+<br>
+
+ <div id="contactus" style="width: 100%;">
               <br><h3  class="h3-class">Contact Us</h3>
                <div class="divider-line"></div>
           </div>
         </div>
         
-<p class="text-center">Surya: +917200967684</p>
-<p class="text-center">Rahul: +917800346083</p>
-<p class="text-center">Sagar: +917550100260</p>
-<p class="text-center">Mail Us: team@uhack.in, support@uhack.in</p>
+      <p class="text-center">Surya: +917200967684</p>
+      <p class="text-center">Rahul: +917800346083</p>
+      <p class="text-center">Sagar: +917550100260</p>
+      <p class="text-center">Mail Us: team@uhack.in, support@uhack.in</p>
 <br>
 <br>
 <br>
+
+        <div id="venue" style="margin-top: -5.5%; width: 100%; text-align: center;" >
+            <h3  class="h3-class">Venue <i class="material-icons"">&#xe55e;</i></h3>
+               <div class="divider-line"></div>
+            <p style=""><br>No.1, Jawaharlal Nehru Road,<br>(100 feet Road, Near Vadapalani Signal),<br>Vadapalani,<br>Chennai - 600 026.</p>
+        </div>
+<br>
+<br>
+<br>
+
         <footer>
           <div class="" style="margin-top: -5.5%; width: 100%;">
               <br><h3  class="h3-class">Follow Us</h3>
@@ -344,7 +423,7 @@
                     <a href="https://www.facebook.com/uhack18/"><i class="fa fa-facebook" class="footer-icon big-icon" style="padding: 0 30px;font-size: 1.35em;"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/uhack18/"><i class="fa fa-instagram" class="footer-icon big-icon" style="padding: 0 30px;font-size: 1.35em;"></i></a>
+                    <a href="https://www.instagram.com/uhack18/"><i class="fa fa-instagram" class="footer-icon big-icon" style="padding: 0 30px;font-size: 1.35em; color: white;"></i></a>
                 </li>
             </ul>
          
@@ -367,7 +446,24 @@
                 else{
                    $('header');
                 }
-              });
+            });
+
+            $("#contactusbtn").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#contactus").offset().top
+                }, 3000);
+            });
+            $("#workflowbtn").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#schedulediv").offset().top
+                }, 3000);
+            });
+            $("#aboutusbtn").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#aboutus").offset().top
+                }, 3000);
+            });
+
         }); 
       </script>
 </body>

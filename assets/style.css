@@ -53,6 +53,11 @@
 }
 
 
+* {
+    box-sizing: border-box;
+}
+
+
 .fadeInLeft {
   animation-name: fadeInLeft; }
 
@@ -486,8 +491,8 @@ p {
 }
 @media (min-width: 800px) {
   .uhack-logo{
-    width: 72.5%;
-    height: 60.5%; 
+    width: 80%;
+    height: 66.5%; 
     padding-left: 4%; 
     margin-top: 5.5%;
   }
