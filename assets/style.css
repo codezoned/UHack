@@ -52,9 +52,7 @@
   src: url("../assets/fonts/corpidoffice/CorpidOffice.ttf");
 }
 
-table, th, td{
-   border: 1px solid black;
-}
+
 .fadeInLeft {
   animation-name: fadeInLeft; }
 
