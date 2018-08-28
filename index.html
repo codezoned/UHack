@@ -18,6 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script type="text/javascript" async="" src="assets/analytics.js"></script>
     <script async="" src="assets/js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -94,29 +95,50 @@
 
       <section id="cover" class="first-section page-section">
         <div class=" row">
-          <div class="column" style="margin-left: 15%; margin-top: 5%;">
-              <img src="assets/images/uhack_shadow.png" class="img-responsive"> 
+          <div class="column logo-div" style="margin-left: 25%; margin-top: 5%;">
+              <img src="assets/images/uhack_shadow.png" class="img-responsive transformimg"> 
           </div>
-          <div class="column buttonsclick" id="buttons" style="margin-left: 7.5%; margin-top: 10%;">  
-              <a href="#timelineabc" id="workflowbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg;">Workflow</a><br>
-              <a href="https://goo.gl/forms/TuCiHqHG9A5hxY3i1" id="registerbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg;">Register</a><br>
-              <a href="#contactus" id="contactusbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg;">Contact Us</a><br>
-              <a href="#aboutus" id="contactusbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg;">Abouts Us</a>
+          <div class="column buttonsclick" id="buttons" style="margin-left: -4.5%; margin-top: 10%; font-size: 16px; min-width: 350px; text-shadow: 3px 3px 3px gray;">  
+              <a href="#timelineabc" id="workflowbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg; text-align: center;">Workflow</a><br>
+              <a href="https://goo.gl/forms/TuCiHqHG9A5hxY3i1" id="registerbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg; text-align: center;">Register</a><br>
+              <a href="#contactus" id="contactusbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg; text-align: center;">Contact Us</a><br>
+              <a href="#aboutus" id="aboutusbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg; text-align: center;">Abouts Us</a>
           </div>
           
         </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div id="aboutus" style="width: 100%; text-align: center; padding-top: 5%; margin-top: -5%; ">
+            <h3 class="h3-class">About</h3>
+               <div class="divider-line"></div>
+             <p style="">UHack is a Hackathon that fosters a community of doers<br>who challenge the status quo and push today’s technology to its limits.<br> Participants can let go of their inhibitions, create cool inspiring projects<br> and meet like-minded people from various backgrounds.</p>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="container-fluid section" id="prizes">
+            <p class="text-center" style="color: #FFFFF;font-size: 22.5px">Cash Prizes worth 10K  </p>
+            <p class="text-center" style="color: #FFFFF;font-size: 17.5px">+</p>
+            <p class="text-center" style="color: #FFFFF;font-size: 22.5px">Internships for Winners in SPI Cinemas</p>
+        </div>
+
                
         
-        <div class="container-fluid" style="margin-top: 15%;">
-            
-
-               <div class="container-fluid section" id="timelineabc">
+    <div class="container-fluid" style="margin-top: 15%;">
+      <div class="container-fluid section" id="timelineabc">
         <div class="section-wrapper pb-5 pt-5">
             <div class="section-header mb-5">
                 <h3 class="text-center">Timeline</h3>
-                <div class="divider-line"></div>
-            </div>
+            <div class="divider-line"></div>
         </div>
+      </div>
     </div>
 <div class="timeline">
   <div class="containerx left">
@@ -155,7 +177,7 @@
 </div>
 
 
-                  <div class="container-fluid section" id="schedule">
+    <div class="container-fluid section" id="schedule">
         <div class="section-wrapper pb-5 pt-5">
             <div class="section-header mb-5" id="schedulediv">
                 <h1 class="text-center">Schedule</h1>
@@ -359,7 +381,7 @@
           <div class="" style=" margin-top: 5%; width: 100%;">
               <h3 class="h3-class">In Association with</h3>
                <div class="divider-line"></div>
-              <div id="cover-container" class="container">
+              <div id="cover-container" class="container association-div">
                   <img src="assets/images/spi_shadow.png" class="association-logo-spi">
                   <img src="assets/images/codezoned_shadow.png" class="association-logo-codezoned">
               </div>
@@ -367,9 +389,9 @@
           <div class="" style="width: 100%;">
               <br><h3  class="h3-class">Sponsored By</h3>
                <div class="divider-line"></div>
-              <div id="cover-container" class="container" style="text-align: center;">
-                  <img src="assets/images/aafaq_shadow.png" class="sponsor-logo">
-                  <img src="assets/images/aafiya_shadow.png" class="sponsor-logo">
+              <div id="cover-container" class="container sponsor-div" style="text-align: center;">
+                  <img id="sponsor-logo1" src="assets/images/aafaq_shadow.png" class="sponsor-logo">
+                  <img id="sponsor-logo2" src="assets/images/aafiya_shadow.png" class="sponsor-logo">
               </div>
           </div>
         </div>
@@ -380,15 +402,8 @@
         <br>
 
 
-        <div id="aboutus" style="width: 100%; text-align: center; padding-top: 5%; margin-top: -5%; ">
-            <h3 class="h3-class">About Us</h3>
-               <div class="divider-line"></div>
-             <p style="">UHack is a Hackathon that fosters a community of doers<br>who challenge the status quo and push today’s technology to its limits.<br> Participants can let go of their inhibitions, create cool inspiring projects<br> and meet like-minded people from various backgrounds.</p>
-        </div>
-<br>
-<br>
-<br>
 
+   
  <div id="contactus" style="width: 100%;">
               <br><h3  class="h3-class">Contact Us</h3>
                <div class="divider-line"></div>
@@ -448,23 +463,28 @@
                 }
             });
 
-            $("#contactusbtn").click(function() {
+            $("#contactusbtn").click(function(e) {
+                 e.preventDefault();
                 $('html, body').animate({
                     scrollTop: $("#contactus").offset().top
-                }, 3000);
+                }, 1000);
             });
-            $("#workflowbtn").click(function() {
+            $("#workflowbtn").click(function(e) {
+                 e.preventDefault();
                 $('html, body').animate({
                     scrollTop: $("#schedulediv").offset().top
-                }, 3000);
+                }, 1000);
             });
-            $("#aboutusbtn").click(function() {
+            $("#aboutusbtn").click(function(e) {
+                 e.preventDefault();
                 $('html, body').animate({
                     scrollTop: $("#aboutus").offset().top
-                }, 3000);
+                }, 1000);
             });
 
-        }); 
+        });
+
+        
       </script>
 </body>
 </html>
