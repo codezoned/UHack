@@ -80,79 +80,26 @@
                text-align: center;
             }
         }
-        
 
-        .topnav {
-            position: relative;
-            overflow: hidden;
-            background-color: white;
-          }
-
-          .topnav a {
-            float: left;
-            color: #222222;
-            text-align: center;
-            /*padding: 14px 16px;*/
-            text-decoration: none;
-            font-size: 22.5px;
-          }
-
-          .topnav-centered a {
-            float: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-          }
-
-          .topnav-right {
-            float: right;
-          }
-
-          /* Responsive navigation menu (for mobile devices) */
-          @media screen and (max-width: 600px) {
-            .topnav a, .topnav-right {
-              float: none;
-              display: block;
-            }
-            
-            .topnav-centered a {
-              position: relative;
-              top: 0;
-              left: 0;
-              transform: none;
-            }
-          }
 
     </style>
 </head>
 
 
 <body>
-       
-      <section id="cover" class="first-section page-section">
       
-                    <!-- Top navigation -->
-          <div class="topnav">
+                      <!-- <img src="assets/images/srm-logo.png" style="width: 25.5%; height: 300%; right: 0"> -->
 
-                <!-- Centered link -->
-                <div class="topnav-centered">
-                     <a href="#" style="font-family: corpidoffice;">Learn. Share. Build.</a>
-                </div>
-                                
-                <!-- Right-aligned links -->
-                <div class="topnav-right">
-                      <a href="#"><img src="assets/images/srm-logo.png" style="width: 40%;"></a>
-                  
-                </div>
-            
-          </div>
+      <section id="cover" class="first-section page-section">
+         <nav style="background-color: blue;">
+            <a href="#" class="navbar-left"><img src="assets/images/srm-logo.png" style="width: 10%; background-color: red;"></a>
+        </nav>
         <div class=" row">
           <div class="column logo-div" style="margin-left: 25%; margin-top: 5%;">
               <img src="assets/images/uhack_shadow.png" class="img-responsive transformimg">
           </div>
           <div class="column buttonsclick" id="buttons" style="margin-left: -4.5%; margin-top: 10%; font-size: 16px; min-width: 350px;">
-              <a href="#timeline" id="workflowbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg; text-align: center;">Workflow</a><br>
+              <a href="#timelineabc" id="workflowbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg; text-align: center;">Workflow</a><br>
               <a href="https://goo.gl/forms/TuCiHqHG9A5hxY3i1" id="registerbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg; text-align: center;">Register</a><br>
               <a href="#contactus" id="contactusbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg; text-align: center;">Contact Us</a><br>
               <a href="#aboutus" id="aboutusbtn" class="animated fadeInLeft button" style="padding-left: 20px; font-family:  aleg-reg; text-align: center;">About</a>
@@ -176,7 +123,7 @@
         <br>
         <br>
  
-      <div id="aboutus" style="width: 100%; text-align: center; padding-top: 5%; margin-top: -5%; ">
+			<div id="aboutus" style="width: 100%; text-align: center; padding-top: 5%; margin-top: -5%; ">
             <h3 class="h3-class">Prizes</h3>
                <div class="divider-line"></div>
         <div class="container-fluid section" id="prizes">
@@ -207,7 +154,7 @@
     <div class="container-fluid" style="margin-top: 1%;">
       <div class="container-fluid section" id="timelineabc">
         <div class="section-wrapper pb-5 pt-5">
-            <div class="section-header mb-5" id="timeline">
+            <div class="section-header mb-5">
                 <h3 class="text-center">Timeline</h3>
             <div class="divider-line"></div>
         </div>
@@ -257,12 +204,12 @@
 
 
     <div id="Schedule" style="width: 100%;">
-              <h1 style="font-size: 60px; font-family: corpidoffice; margin-bottom: -2px;" class="h3-class">Schedule</h1>
+              <h2  class="h3-class">Schedule</h2>
                <div class="divider-line"></div>
           </div>
         
 
-  
+	
 <div id="Hackday1" style="width: 100%;">
               <h3  class="h3-class">Hack Day-1</h3>
                <div class="divider-line"></div>
@@ -452,8 +399,8 @@
               <h3 class="h3-class">In Association with</h3>
                <div class="divider-line"></div>
               <div id="cover-container" class="container association-div">
-                  <a href="https://www.spicinemas.in/"><img src="assets/images/spi_shadow.png" class="association-logo-spi"></a>
-                  <a href="http://talk.codezoned.com/"><img src="assets/images/codezoned_shadow.png" class="association-logo-codezoned"></a>
+                  <img src="assets/images/spi_shadow.png" class="association-logo-spi">
+                  <img src="assets/images/codezoned_shadow.png" class="association-logo-codezoned">
               </div>
           </div>
           <div class="" style="width: 100%;">
@@ -542,7 +489,7 @@
             $("#workflowbtn").click(function(e) {
                  e.preventDefault();
                 $('html, body').animate({
-                    scrollTop: $("#timeline").offset().top
+                    scrollTop: $("#schedulediv").offset().top
                 }, 1000);
             });
             $("#aboutusbtn").click(function(e) {
