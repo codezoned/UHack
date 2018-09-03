@@ -263,93 +263,10 @@
     clear: both; 
   }
 
-/*#navbar {
-  display: block;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  z-index: 999; 
-}
-  #navbar #menu-toggle {
-    background-color: #272425;
-    color: white; 
-  }
-
-#navbar::after {
-  display: block;
-  content: "";
-  clear: both; 
-}
-
-#navbar .top-ul {
-  display: block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  padding: 0 1.5em; 
-}
-
-#navbar #side-nav {
-  top: 0;
-  padding-left: 0;
-  overflow-x: hidden;
-  background-color: white;
-  width: 0;
-  height: 100vh;
-  display: block;
-  position: absolute;
-  margin: 0;
-  list-style: none;
-  padding-top: 5vh;
-  text-align: center;
-  z-index: 5;
-  transition: 0.5s; 
-}
-
-#navbar #menu-toggle {
-  z-index: 1;
-  display: none;
-  position: absolute; 
-}*/
 
 @media screen and (max-width: 700px) {
- /* #navbar .top-li {
-    display: none; 
-  }
-  #navbar #menu-toggle {
-    display: block; 
-  } */
-}
-
-/*#navbar .top-li {
-  float: left; 
-}
-
-#navbar a {
-  padding: 1.5em;
-  display: block;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase; 
 
 }
-
-#navbar li:hover, #menu-toggle:hover {
-  background-color: #e6e6e6;
-  cursor: pointer; 
-}
-
-#navbar a:visited {
-  color: black; 
-}
-
-#navbar li:active {
-  background-color: darkgrey; 
-}*/
 
 .curpage {
   background-color: darkgrey; 
@@ -361,7 +278,6 @@ body {
   margin: 0;
   /*min-height: 100vh;*/
   color: white;
-  background-color: #FFFFFF; 
 }
 
 a {
